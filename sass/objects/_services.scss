@@ -1,0 +1,27 @@
+/* Modus Versus Slicing
+ *
+ * /sass/objects/_focus.scss - Non-cosmetic styles for services
+ *
+ * coded by Mucht!
+ * started at 28/02/2016
+ */
+
+.services{
+    width: $containerWidth;
+    margin: auto;
+    min-height: 59rem; /*TMP*/
+    .focus{
+        a{
+            margin-left: 93.5rem;
+            margin-bottom: 1rem;
+        }
+    }
+    ul{
+        li{
+            width: 23.076923077%; /* 270/1170 *100 */
+        }
+        li+li{
+            margin-left: 2.564102564% ; /* 30/1170*100 */
+        }
+    }
+}

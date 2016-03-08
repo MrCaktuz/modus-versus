@@ -1,0 +1,22 @@
+/* Modus Versus Slicing
+ *
+ * /sass/objects/_why.scss - Non-cosmetic styles for why
+ *
+ * coded by Mucht!
+ * started at 28/02/2016
+ */
+
+ main{
+     .why{
+         figure{
+         	margin: 65px 0 60px 0;
+         }
+     }
+     .cols{
+     	width: $containerWidth;
+     	margin: 0 auto 65px;
+     }
+     .col{
+         width: 27rem;
+     }
+ }

@@ -1,0 +1,55 @@
+/* Modus Versus Slicing
+ *
+ * /sass/components/_clients.scss - cosmetic styles for services
+ *
+ * coded by Mucht!
+ * started at 29/02/2016
+ */
+
+.clients {
+    clear: both;
+    &__title {
+        font: 900 1.6rem $openSansStack;
+    	color: $laborTextColor;
+        float: left;
+    }
+    &__nav {
+        a {
+            display: inline-block;
+        	float: right;
+        	padding: 1rem 1rem;
+        	margin: 1rem;
+        	border-radius: 0.4rem;
+        	font: 600  1.3rem $openSansStack;
+        	text-decoration: none;
+        	text-transform: uppercase;
+        	color: transparent;
+        	width: 2rem;
+        	height: 2rem;
+        	background-color: $focusColor;
+        }
+        .client-previous::before {
+            position: relative;
+            top: -.8rem;
+            right: .6rem;
+            content: "";
+        	font: normal 1.4rem "Glyphs";
+        	color: #FFF;
+        }
+        .client-next::before {
+            position: relative;
+            top: -.8rem;
+            right: .6rem;
+            content: "";
+        	font: normal 1.4rem "Glyphs";
+        	color: #FFF;
+        }
+    }
+    ul {
+        clear: both;
+        overflow: hidden;
+    }
+    &__client {
+        display: inline-block;
+    }
+}

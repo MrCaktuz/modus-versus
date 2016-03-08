@@ -1,0 +1,75 @@
+/* Modus Versus Slicing
+ *
+ * /sass/components/_why.scss - Design styles for why
+ *
+ * coded by Mucht!
+ * started at 28/02/2016
+ */
+/* !!! problème avec les variables, elles sont considéré comme undifined. */
+.why{
+    background: #ececec url("../assets/img/why-bcg-pattern.png") repeat-x scroll left top;
+    h2{
+    	padding-top: 7rem;
+    	text-align: center;
+        strong{
+        	display: block;
+        	text-transform: uppercase;
+        	color: $focusColor;
+        	font: 600  4rem $openSansStack;
+        }
+        span{
+        	display: block;
+        	font: 1.3rem $openSansStack;
+        }
+    }
+    figure{
+    	text-align: center;
+    	margin: 65px 0 60px 0;
+    }
+    .cols{
+        text-align: center;
+        &__col{
+            float: left;
+            text-align: left;
+            width: 33%;
+            h3{
+                font: 900 1.6rem $openSansStack;
+            	color: $laborTextColor;
+            }
+            p{
+                font-size: 1.3rem;
+            	line-height: 2.6rem;
+            }
+            p::before{
+                content:" ";
+                display: block;
+                position: absolute;
+                width: 0;
+                height: 0;
+                bottom: -0.75rem;
+                left: 2rem;
+                border: .75rem solid transparent;
+                border-bottom-color: $menuTextColor;
+                z-index: 1000;
+                transform: rotate(45deg);
+            }
+        }
+        &__col:last-child{
+            float: right;
+        }
+        &__col:last-child p{
+            position: relative;
+            background-color: $menuTextColor;
+            padding: 1rem;
+        }
+        &__col:last-child cite{
+            margin: 1rem 0 0 6rem;
+            font: 600 1.6rem $openSansStack;
+        }
+    }
+    .cols::after{
+        content: " ";
+        width: 100%;
+        clear: both;
+    }
+}

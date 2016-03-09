@@ -9,7 +9,7 @@
 .why{
     background: #ececec url("../assets/img/why-bcg-pattern.png") repeat-x scroll left top;
     h2{
-    	padding-top: 7rem;
+    	padding: 7rem;
     	text-align: center;
         strong{
         	display: block;
@@ -69,7 +69,7 @@
     }
     .cols::after{
         content: " ";
-        width: 100%;
+        display: block;
         clear: both;
     }
 }

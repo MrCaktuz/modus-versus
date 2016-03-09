@@ -8,7 +8,8 @@
 
 .clients{
     width: 117rem;
-    &__liste {
+    margin: 7rem auto;
+    &__liste { // ul
         width: $containerWidth;
     }
 }

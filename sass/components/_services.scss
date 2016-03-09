@@ -53,30 +53,46 @@
                 text-align: center;
                 transition: all .25s ease-in-out;
                 &__title{ /* h3 */
+                    margin-top: 2rem;
                     font: bold 1.3rem $openSansStack;
                     color: $headingTextColor;
                     :before{
-                        display: block;
-                        margin: 0 auto 2rem;
                         font: normal 6rem $glyphs;
                         color: $focusColor;
                         transition: all .25s ease-in-out;
                     }
                     &--icon-thumb::before {
                         content:"";
+                        font: normal 6rem $glyphs;
+                        color: $mainColor;
+                        display: block;
+                        margin: 0 auto 1rem;
                     }
                     &--icon-key::before {
                         content:"";
+                        display: block;
+                        margin: 0 auto 1rem;
+                        font: normal 6rem $glyphs;
+                        color: $mainColor;
                     }
                     &--icon-flag::before {
                         content:"";
+                        display: block;
+                        margin: 0 auto 1rem;
+                        font: normal 6rem $glyphs;
+                        color: $mainColor;
                     }
                     &--icon-flask::before {
                         content:"";
+                        display: block;
+                        margin: 0 auto 1rem;
+                        font: normal 6rem $glyphs;
+                        color: $mainColor;
                     }
 
                 }
                 &__paragraphe{ /* p */
+                    margin-top: 2rem;
                     font: normal 1.3rem $openSansStack;
                 	color: $laborTextColor;
                 }
@@ -99,7 +115,7 @@
                 }
             }
             .service:hover{
-                .service__title{
+                .service__title::before{
                     color: $focusColor;
                 }
                 .service__fake-button{

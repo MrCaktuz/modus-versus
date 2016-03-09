@@ -5,3 +5,52 @@
  * coded by Mucht!
  * started at 29/02/2016
  */
+
+ .footer{
+     .title{ // h2
+         width: 19.2rem;
+     }
+     &__el{ // div
+         &--primary{ // div
+             max-width: $containerWidth;
+             .cols{ // div
+                 &__col{ // section
+                     max-width: 36.5rem;
+                     .title{
+
+                     }
+                     &--contact-infos{ // section
+
+                     }
+                     &--sitemap{ // section
+
+                     }
+                     &--community{ // section
+
+                     }
+                     &--blog-articles{ // section
+
+                     }
+                 }
+             }
+         }
+         &--secondary{ // div
+             .legals{ // div
+
+             }
+             .socials{ // div
+                 &__social{ // li
+                     &--twitter{ // a
+
+                     }
+                     &--googleplus{ // a
+
+                     }
+                     &--rss-feed{ // a
+
+                     }
+                 }
+             }
+         }
+     }
+ }

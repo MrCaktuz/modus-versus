@@ -5,3 +5,139 @@
  * coded by Mucht!
  * started at 29/02/2016
  */
+ .footer{
+    background-color: $lightMainColor;
+ 	line-height: 2rem;
+ 	padding-top: 4.8rem;
+     a{
+         color: $menuTextColor;
+         text-decoration: none;
+     }
+     .title{ // h2
+         position: relative;
+     	height: 2.2rem; /*to delete*/
+     	margin: 0 auto;
+     	left:-48.9rem;
+     	background: transparent url( #{ $imgPath }logo.svg ) left no-repeat;
+     	-webkit-background-size: contain;
+     	background-size: contain; /*quand on travaille avec du svg, on met tjs un bg size contain pour qu'il ne dépasse pas*/
+     	font-size: 0; /*remplace le text-indent*/
+     }
+     &__el{ // div
+         &--primary{ // div
+             font-size: 1.3rem;
+             margin: 3.5rem auto 6rem;
+             .cols{ // div
+                 &__col{ // section
+                     color: white;
+                 	display: inline-block;
+                 	vertical-align: top;
+                     margin-top: -5.7rem;
+                     .title{
+                         margin-bottom: 3.5rem;
+                     }
+                     &--contact-infos{ // section
+                         .title{
+                             font-size: 0;
+                         	position: absolute;
+                         }
+                     }
+                     &--sitemap{ // section
+                         .title{
+                             font-weight: bold;
+                         	font-size: 2rem;
+                         	color: $darkMainColor;
+                         	text-indent: -2rem;
+                         }
+                         ul{
+                             li::before{
+                                 font: normal 1rem/1 $glyphs;
+                             	content: "";
+                             }
+                         }
+                     }
+                     &--community{ // section
+                         .title{
+                             font-weight: bold;
+                         	font-size: 2rem;
+                         	color: $darkMainColor;
+                         	text-indent: -2rem;
+                         }
+                         ul{
+                             li::before{
+                                 font: normal 1rem/1 $glyphs;
+                             	content: "";
+                             }
+                         }
+                     }
+                     &--blog-articles{ // section
+                         .title{
+                             font: italic 2rem $openSansStack;
+                             a{
+                                 font: bold 2rem/0.5 $openSansStack;
+                             }
+                         }
+                         time{
+                             display: block;
+                         	color: $darkMainColor;
+                         }
+                     }
+                 }
+                 &__col+&__col{
+                     margin-left: 10rem;
+                 }
+                 &__col:first-of-type dl dt{
+                     display: inline-block;
+                 }
+                 &__col:first-of-type dl dd{
+                     display: inline-block;
+                     font: bold 2rem/2 $openSansStack;
+                 }
+             }
+         }
+         &--secondary{ // div
+             padding: 1rem 0;
+         	margin: 0 auto;
+         	background-color: $mainColor;
+             .legals{ // div
+                 display: inline;
+             	vertical-align: middle;
+             }
+             .socials{ // div
+                 display: inline;
+             	vertical-align: middle;
+                 font-size: 1.3rem;
+             	position: relative;
+             	left: 36.5rem;
+                 ul{
+                     font-size: 0;
+                 	display: inline;
+                 	position: relative;
+                 	left: 123rem;
+                 }
+                 &__social{ // li
+                     display: inline;
+                 	vertical-align: middle;
+                     a::before{
+                         font: normal 3rem $glyphs;
+                     	content: "";
+                     	color: white;
+                     	vertical-align: middle;
+                     }
+                     &--twitter::before{ // a
+                         content: "";
+                     }
+                     &--googleplus{ // a
+                         content: "";
+                     }
+                     &--rss-feed{ // a
+                         content: "";
+                     }
+                 }
+                 &__social+&__social{
+                     margin-left: 3rem;
+                 }
+             }
+         }
+     }
+ }

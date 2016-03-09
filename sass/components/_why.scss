@@ -7,7 +7,7 @@
  */
 /* !!! problème avec les variables, elles sont considéré comme undifined. */
 .why{
-    background: #ececec url("../assets/img/why-bcg-pattern.png") repeat-x scroll left top;
+    background: #ececec url("#{ $imgPath }why-bcg-pattern.png") repeat-x scroll left top;
     h2{
     	padding: 7rem;
     	text-align: center;
